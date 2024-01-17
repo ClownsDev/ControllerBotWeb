@@ -1,15 +1,19 @@
-import NotFoundPage from "./pages/NotFoundPage";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
+import Header from "./components/Header/Header";
+import HomePage from "./pages/HomePage";
+import Footer from "./components/Footer/Footer";
+import NotFoundPage from "./pages/NotFoundPage";
 import "./App.scss";
 
 function App() {
   return (
     <>
+      <Header />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<HomePage />}></Route>
         <Route path="*" element={<NotFoundPage />}></Route>
       </Routes>
+      <Footer />
     </>
   );
 }

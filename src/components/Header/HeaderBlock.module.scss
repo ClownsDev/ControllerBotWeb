@@ -1,0 +1,12 @@
+:root {
+  ul {
+    display: flex;
+  }
+  li a {
+    color: red;
+  }
+  li + li {
+    margin-left: 15px;
+    color: red;
+  }
+}
