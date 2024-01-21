@@ -1,0 +1,14 @@
+@import '../../assets/styles/variables.scss';
+
+.btn {
+    display: block;
+    width: 100%;
+    max-width: 378px;
+    padding: 24px 5px;
+
+    background-color: $simpleBtn-bg;
+    color: $simpleBtn-color;
+    border-radius: $borderRadius-medium;
+
+    font-size: $simpleBtn-fontSize;
+}
