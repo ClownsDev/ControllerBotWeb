@@ -1,6 +1,16 @@
-:root {
+@import "./../assets/styles/variables.scss";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  line-height: 1;
+  height: 100vh;
+  color: $grey-color;
   span {
-    font-size: 50px;
-    color: red;
+    font-size: 30px;
+    margin-top: 25px;
   }
 }

@@ -1,16 +1,13 @@
-@import './variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Poppins:wght@400;500;600;700&display=swap");
+@import "./variables.scss";
+
 :root {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  background: $background;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: $background;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
