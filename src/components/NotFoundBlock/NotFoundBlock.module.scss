@@ -2,15 +2,47 @@
 
 .root {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: space-between;
   font-size: 100px;
-  line-height: 1;
   height: 100vh;
   color: $grey-color;
-  span {
+  .box {
+    width: 50%;
+    text-align: center;
+  }
+  .error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    justify-content: center;
+    background: $grey-color;
+    color: $color;
+    font-size: 200px;
+  }
+  .test {
     font-size: 30px;
     margin-top: 25px;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    max-width: 378px;
+    padding: 24px 5px;
+    margin-top: 35px;
+
+    background-color: $simpleBtn-bg;
+    color: $grey-color;
+    border-radius: $borderRadius-medium;
+    font-size: $simpleBtn-fontSize;
+
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      background-color: $hover;
+    }
   }
 }
