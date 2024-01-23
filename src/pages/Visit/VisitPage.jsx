@@ -1,6 +1,13 @@
 import React, { useMemo } from "react";
 import SimpleButton from "../../components/UI/SimpleButton/SimpleButton";
 import styles from "./VisitPage.module.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
 function VisitPage() {
   return (
     <div
@@ -20,28 +27,61 @@ function VisitPage() {
         </div>
       </div>
       <div className={styles.visitDescr}>
-
-        <div className={styles.sliderSlider}>
-          <div className={styles.sliderSlide}>
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          slidesPerView={1}
+          className={styles.sliderSlider}
+          navigation={{
+            prevEl: ".visitSliderBtnPrev",
+            nextEl: ".visitSliderBtnNext",
+          }}
+        >
+          <SwiperSlide className={styles.sliderSlide}>
             <div>
               <img src="/visitPage/01.png" alt="" />
             </div>
-            <h2 className={styles.descrTitle}>Explore The World Of Art</h2>
-            <p className={styles.descrSubtitle}>
-              CloseSea Is A Great Platform For Discover Largest NFTs And Other
-              Stuff !!
-            </p>
-          </div>
-        </div>
+            <div className={styles.slideTextWrap}>
+              <h2 className={styles.descrTitle}>Explore The World Of Art</h2>
+              <p className={styles.descrSubtitle}>
+                CloseSea Is A Great Platform For Discover Largest NFTs And Other
+                Stuff !!
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={styles.sliderSlide}>
+            <div>
+              <img src="/visitPage/02.png" alt="" />
+            </div>
+            <div className={styles.slideTextWrap}>
+              <h2 className={styles.descrTitle}>Start Your Own NFT Gallery</h2>
+              <p className={styles.descrSubtitle}>
+                CloseSea Is A Great Platform For Discover Largest NFTs And Other
+                Stuff !!
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={styles.sliderSlide}>
+            <div>
+              <img src="/visitPage/03.png" alt="" />
+            </div>
+            <div className={styles.slideTextWrap}>
+              <h2 className={styles.descrTitle}>Discover Largest NFT Market</h2>
+              <p className={styles.descrSubtitle}>
+                CloseSea Is A Great Platform For Discover Largest NFTs And Other
+                Stuff !!
+              </p>
+            </div>
+          </SwiperSlide>
+        </Swiper>
 
         <div className={styles.sliderButtons}>
-          <div className={styles.sliderBtnPrev}>
+          <button className="visitSliderBtnPrev">
             <img src="./visitPage/arrowPrev.svg" alt="arrow prev" />
-          </div>
+          </button>
           <div className={styles.btnsSeparator}></div>
-          <div className={styles.sliderBtnNext}>
+          <button className="visitSliderBtnNext">
             <img src="./visitPage/arrowNext.svg" alt="arrow nex" />
-          </div>
+          </button>
         </div>
       </div>
     </div>
