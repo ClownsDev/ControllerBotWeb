@@ -1,14 +1,21 @@
-@import '../../assets/styles/variables.scss';
+@import "../../assets/styles/variables.scss";
 
 .btn {
-    display: block;
-    width: 100%;
-    max-width: 378px;
-    padding: 24px 5px;
+  display: block;
+  width: 100%;
+  max-width: 378px;
+  padding: 24px 5px;
+  margin-top: 35px;
 
-    background-color: $simpleBtn-bg;
-    color: $simpleBtn-color;
-    border-radius: $borderRadius-medium;
+  background-color: $simpleBtn-bg;
+  color: $simpleBtn-color;
+  border-radius: $borderRadius-medium;
+  font-size: $simpleBtn-fontSize;
 
-    font-size: $simpleBtn-fontSize;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background-color: $hover;
+  }
 }

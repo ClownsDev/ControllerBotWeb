@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import styles from "./NotFoundBlock.module.scss";
+import SimpleButton from "../UI/SimpleButton/SimpleButton";
 
 const NotFound = () => {
   return (
@@ -13,9 +14,7 @@ const NotFound = () => {
         <div className={styles.error}>
           <h1>404</h1>
           <span className={styles.test}>Страница не найдена 😕</span>
-          <Link className={styles.btn} to="/">
-            На главную
-          </Link>
+          <SimpleButton children={"На главную"} />
         </div>
       </div>
     </>

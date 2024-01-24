@@ -1,9 +1,13 @@
-import React from 'react'
-import styles from './SimpleButton.module.scss'
-function SimpleButton({children}) {
+import React from "react";
+import styles from "./SimpleButton.module.scss";
+import { Link } from "react-router-dom";
+
+function SimpleButton({ children }) {
   return (
-    <button className={styles.btn}>{children}</button>
-  )
+    <Link to="/" className={styles.btn}>
+      {children}
+    </Link>
+  );
 }
 
-export default SimpleButton
+export default SimpleButton;
