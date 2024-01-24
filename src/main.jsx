@@ -7,5 +7,5 @@ import "./components/assets/styles/_global.scss";
 import Router from "./components/Router/Router.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <Router/>
+  <App/>
 );

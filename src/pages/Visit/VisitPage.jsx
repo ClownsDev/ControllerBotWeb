@@ -40,10 +40,9 @@ function VisitPage() {
               <img src="/visitPage/01.png" alt="" />
             </div>
             <div className={styles.slideTextWrap}>
-              <h2 className={styles.descrTitle}>Explore The World Of Art</h2>
+              <h2 className={styles.descrTitle}>Модерирование</h2>
               <p className={styles.descrSubtitle}>
-                CloseSea Is A Great Platform For Discover Largest NFTs And Other
-                Stuff !!
+              Простые и удобные команды, журнал действий, автомодерирование, уведомления о потенциальных нарушителях, жалобы на пользователей и многое другое. Не оставляйте своё сообщество без защиты.
               </p>
             </div>
           </SwiperSlide>
@@ -52,10 +51,9 @@ function VisitPage() {
               <img src="/visitPage/02.png" alt="" />
             </div>
             <div className={styles.slideTextWrap}>
-              <h2 className={styles.descrTitle}>Start Your Own NFT Gallery</h2>
+              <h2 className={styles.descrTitle}>Поведение</h2>
               <p className={styles.descrSubtitle}>
-                CloseSea Is A Great Platform For Discover Largest NFTs And Other
-                Stuff !!
+              Настройте поведение бота с помощью JavaScript. Создавайте пользовательские команды и задачи автоматизации, чтобы придать волшебство своему сообществу.
               </p>
             </div>
           </SwiperSlide>
@@ -64,10 +62,9 @@ function VisitPage() {
               <img src="/visitPage/03.png" alt="" />
             </div>
             <div className={styles.slideTextWrap}>
-              <h2 className={styles.descrTitle}>Discover Largest NFT Market</h2>
+              <h2 className={styles.descrTitle}>Полезные функции</h2>
               <p className={styles.descrSubtitle}>
-                CloseSea Is A Great Platform For Discover Largest NFTs And Other
-                Stuff !!
+              Интерактивные сообщения и реакции, временные голосовые каналы, приветственные сообщения и многое другое!
               </p>
             </div>
           </SwiperSlide>

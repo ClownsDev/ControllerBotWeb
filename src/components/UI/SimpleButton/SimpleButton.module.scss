@@ -1,15 +1,52 @@
-@import '../../assets/styles/variables.scss';
+@import "../../assets/styles/variables.scss";
 
 .btn {
-    display: block;
-    width: 100%;
-    max-width: 378px;
-    padding: 24px 5px;
+  display: block;
+  width: 100%;
+  max-width: 378px;
+  padding: 24px 5px;
 
-    background-color: $simpleBtn-bg;
-    color: $simpleBtn-color;
-    border-radius: $borderRadius-medium;
+  background-color: $simpleBtn-bg;
+  color: $simpleBtn-color;
+  border-radius: $borderRadius-medium;
 
-    font-size: $simpleBtn-fontSize;
-    text-transform: uppercase;
+  font-size: $simpleBtn-fontSize;
+  text-transform: uppercase;
+
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 1s;
+
+  span {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: $simpleBtn-color;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 30%);
+    transition: all 0.45s;
+    transition-delay: calc((var(--n) - 1) * 0.15s);
+    z-index: -1;
+  }
+}
+.btn:hover {
+  background-color: $simpleBtn-color;
+  color: $simpleBtn-bg;
+  span {
+    transform: translateY(0) scale(2);
+  }
+}
+span:nth-child(1) {
+  --n: 1;
+}
+span:nth-child(2) {
+  --n: 2;
+}
+span:nth-child(3) {
+  --n: 3;
+}
+span:nth-child(4) {
+  --n: 4;
 }
