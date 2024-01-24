@@ -2,11 +2,9 @@ import React, { useMemo } from "react";
 import SimpleButton from "../../components/UI/SimpleButton/SimpleButton";
 import styles from "./VisitPage.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 
 function VisitPage() {
   return (
@@ -20,21 +18,22 @@ function VisitPage() {
         </div>
         <div className={styles.visitFormWrap}>
           <div className={styles.visitForm}>
-            <h1 className={styles.title}>Link this!</h1>
-            <h3 className={styles.subtitle}>Subtitle</h3>
+            <h1 className={styles.title}>Создавайте всё, что пожелаете</h1>
+            <h3 className={styles.subtitle}>Многофункциональный бот для Discord, предназначенный расширить возможности управления и модерирования сообществ.</h3>
             <SimpleButton className={styles.btn}>Add your Discord</SimpleButton>
           </div>
         </div>
       </div>
       <div className={styles.visitDescr}>
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          modules={[Navigation]}
+          loop={true}
           slidesPerView={1}
-          className={styles.sliderSlider}
           navigation={{
             prevEl: ".visitSliderBtnPrev",
             nextEl: ".visitSliderBtnNext",
           }}
+          className={styles.sliderSlider}
         >
           <SwiperSlide className={styles.sliderSlide}>
             <div>

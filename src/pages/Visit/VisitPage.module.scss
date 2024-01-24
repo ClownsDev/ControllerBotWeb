@@ -24,12 +24,9 @@
     justify-content: center;
     flex-grow: 1;
 }
-.logo {
-
-}
 .title {
     font-weight: 600;
-    font-size: $fontSize-extraLarge;
+    font-size: $fontSize-huge;
     margin-bottom: 15px;
 }
 .subtitle {
@@ -37,6 +34,8 @@
     font-weight: 500;
     color: $grey-color;
     margin-bottom: 45px;
+    text-align: center;
+    max-width: 580px;
 }
 .visitDescr {
     display: flex;
