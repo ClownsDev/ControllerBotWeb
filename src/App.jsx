@@ -1,14 +1,21 @@
-import React, { useState } from 'react'
-import Router from './components/Router/Router';
+import React, { useState } from "react";
+import Router from "./components/Router/Router";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import VisitPage from "./pages/Visit/VisitPage";
 function App() {
-  const [discord,setDiscord] = useState(false)
+  const [user, setUser] = useState(false);
   return (
     <>
-      <Header />
-      <Router/>
-      <Footer />
+      {!user ? (
+        <VisitPage setUser={setUser} />
+      ) : (
+        <>
+          <Header />
+          <Router />
+          <Footer />
+        </>
+      )}
     </>
   );
 }

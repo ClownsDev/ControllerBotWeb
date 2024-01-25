@@ -5,8 +5,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
 
-function VisitPage() {
+function VisitPage({setUser}) {
+  const reg = () => {
+    setUser(true)
+  }
   return (
     <div
       className={styles.visitWrap}
@@ -20,7 +24,7 @@ function VisitPage() {
           <div className={styles.visitForm}>
             <h1 className={styles.title}>Создавайте всё, что пожелаете</h1>
             <h3 className={styles.subtitle}>Многофункциональный бот для Discord, предназначенный расширить возможности управления и модерирования сообществ.</h3>
-            <SimpleButton className={styles.btn}>Add your Discord</SimpleButton>
+            <SimpleButton path='/server' className={styles.btn} onClick={reg}>Add your Discord</SimpleButton>
           </div>
         </div>
       </div>
