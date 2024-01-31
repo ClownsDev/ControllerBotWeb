@@ -1,18 +1,16 @@
 import React from "react";
-import {BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "../../pages/Home/HomePage";
-import NotFoundPage from "../../pages/NotFound/NotFoundPage";
+import { Routes, Route } from "react-router-dom";
 import VisitPage from "../../pages/Visit/VisitPage";
+import Servers from "../Servers/Servers";
+import NotFoundPage from "../../pages/NotFound/NotFoundPage";
 
 const Router = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />}/>
-        <Route path="/visit" element={<VisitPage />}/>
-        <Route path="*" element={<NotFoundPage />}/>
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<VisitPage />} />
+      <Route path="/servers" element={<Servers />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
   );
 };
 

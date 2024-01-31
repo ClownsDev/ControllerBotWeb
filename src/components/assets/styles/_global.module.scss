@@ -5,6 +5,7 @@
   font-family: "Poppins", sans-serif;
   line-height: 1;
   font-weight: 400;
+  font-size: $fontSize-small;
   background-color: $background;
   color: $grey-color;
   font-synthesis: none;
@@ -13,8 +14,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-// .container {
-//   max-width: 1300px;
-//   padding: 0 20px;
-//   margin: 0 auto;
-// }
+.container {
+  max-width: 1300px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
