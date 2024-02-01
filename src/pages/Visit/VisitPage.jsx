@@ -66,7 +66,7 @@ function VisitPage({setUser}) {
               <img src="/visitPage/03.png" alt="" />
             </div>
             <div className={styles.slideTextWrap}>
-              <h2 className={styles.descrTitle}>Полезные функции</h2>
+              <h2 className={styles.descrTitle}>Функционал</h2>
               <p className={styles.descrSubtitle}>
               Интерактивные сообщения и реакции, временные голосовые каналы, приветственные сообщения и многое другое!
               </p>
