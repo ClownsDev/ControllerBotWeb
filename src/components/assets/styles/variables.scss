@@ -1,6 +1,7 @@
-$background: #141718;
+$background: #fff;
 $color: #141416;
-$grey-color: #cfcfd3;
+$grey-color: #989898;
+$darkGrey-color: #6d6d6d;
 $hover: #343839;
 
 $fontSize-tiny: 14px;
@@ -18,5 +19,5 @@ $borderRadius-large: 25px;
 
 // SimpleBtn
 $simpleBtn-bg: $background;
-$simpleBtn-color: $grey-color;
+$simpleBtn-color: $color;
 $simpleBtn-fontSize: $fontSize-medium;
