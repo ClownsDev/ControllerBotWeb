@@ -13,7 +13,7 @@ const NotFound = () => {
         </div>
         <div className={styles.error}>
           <h1>404</h1>
-          <span className={styles.test}>Страница не найдена 😕</span>
+          <span className={styles.description}>Страница не найдена 😕</span>
           <SimpleButton children={"На главную"} />
         </div>
       </div>

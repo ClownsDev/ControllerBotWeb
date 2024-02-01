@@ -2,15 +2,15 @@ import React, { useMemo } from "react";
 import SimpleButton from "../../components/UI/SimpleButton/SimpleButton";
 import styles from "./VisitPage.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation} from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Link } from "react-router-dom";
 
-function VisitPage({setUser}) {
+function VisitPage({ setUser }) {
   const reg = () => {
-    setUser(true)
-  }
+    setUser(true);
+  };
   return (
     <div
       className={styles.visitWrap}
@@ -23,8 +23,13 @@ function VisitPage({setUser}) {
         <div className={styles.visitFormWrap}>
           <div className={styles.visitForm}>
             <h1 className={styles.title}>Создавайте всё, что пожелаете</h1>
-            <h3 className={styles.subtitle}>Многофункциональный бот для Discord, предназначенный расширить возможности управления и модерирования сообществ.</h3>
-            <SimpleButton path='/server' className={styles.btn} onClick={reg}>Add your Discord</SimpleButton>
+            <h3 className={styles.subtitle}>
+              Многофункциональный бот для Discord, предназначенный расширить
+              возможности управления и модерирования сообществ.
+            </h3>
+            <SimpleButton path="/servers" className={styles.btn} onClick={reg}>
+              Add to Discord
+            </SimpleButton>
           </div>
         </div>
       </div>
@@ -46,7 +51,9 @@ function VisitPage({setUser}) {
             <div className={styles.slideTextWrap}>
               <h2 className={styles.descrTitle}>Модерирование</h2>
               <p className={styles.descrSubtitle}>
-              Простые и удобные команды, журнал действий, автомодерирование, уведомления о потенциальных нарушителях, жалобы на пользователей и многое другое. Не оставляйте своё сообщество без защиты.
+                Простые и удобные команды, журнал действий, автомодерирование,
+                уведомления о потенциальных нарушителях, жалобы на пользователей
+                и многое другое. Не оставляйте своё сообщество без защиты.
               </p>
             </div>
           </SwiperSlide>
@@ -57,7 +64,9 @@ function VisitPage({setUser}) {
             <div className={styles.slideTextWrap}>
               <h2 className={styles.descrTitle}>Поведение</h2>
               <p className={styles.descrSubtitle}>
-              Настройте поведение бота с помощью JavaScript. Создавайте пользовательские команды и задачи автоматизации, чтобы придать волшебство своему сообществу.
+                Настройте поведение бота с помощью JavaScript. Создавайте
+                пользовательские команды и задачи автоматизации, чтобы придать
+                волшебство своему сообществу.
               </p>
             </div>
           </SwiperSlide>
@@ -68,7 +77,8 @@ function VisitPage({setUser}) {
             <div className={styles.slideTextWrap}>
               <h2 className={styles.descrTitle}>Функционал</h2>
               <p className={styles.descrSubtitle}>
-              Интерактивные сообщения и реакции, временные голосовые каналы, приветственные сообщения и многое другое!
+                Интерактивные сообщения и реакции, временные голосовые каналы,
+                приветственные сообщения и многое другое!
               </p>
             </div>
           </SwiperSlide>

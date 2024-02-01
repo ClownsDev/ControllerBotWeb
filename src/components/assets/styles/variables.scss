@@ -1,9 +1,15 @@
+// UI
 $background: #fff;
-$color: #141416;
-$grey-color: #989898;
-$darkGrey-color: #6d6d6d;
 $hover: #343839;
 
+// Colors
+$black-color: #141416;
+$white-color: #fff;
+$grey-color: #989898;
+$ligthenGrey-color: #cbcbcb;
+$darkenGrey-color: #6d6d6d;
+
+// Variables
 $fontSize-tiny: 14px;
 $fontSize-small: 16px;
 $fontSize-medium: 18px;
@@ -19,5 +25,5 @@ $borderRadius-large: 25px;
 
 // SimpleBtn
 $simpleBtn-bg: $background;
-$simpleBtn-color: $color;
+$simpleBtn-color: $black-color;
 $simpleBtn-fontSize: $fontSize-medium;

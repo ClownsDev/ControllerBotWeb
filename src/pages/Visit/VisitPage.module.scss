@@ -1,95 +1,101 @@
-@import '../../components/assets/styles/variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+@import "../../components/assets/styles/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
 .visitWrap {
-    height: 100vh;
-    overflow-y: hidden;
-    display: flex;
-    justify-content: space-between;
+  height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: space-between;
 }
 .visitRegistr {
-    padding: 48px;
-    height: 100%;
-    width: 60%;
+  padding: 48px;
+  height: 100%;
+  width: 60%;
+  background-color: $white-color;
 }
 .visitFormWrap {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .visitForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
 }
 .title {
-    font-weight: 600;
-    font-size: $fontSize-huge;
-    margin-bottom: 15px;
-    text-align: center;
+  font-weight: 600;
+  font-size: $fontSize-huge;
+  margin-bottom: 15px;
+  text-align: center;
+  color: $black-color;
 }
 .subtitle {
-    font-size: 22px;
-    font-weight: 500;
-    color: $grey-color;
-    margin-bottom: 45px;
-    text-align: center;
-    max-width: 580px;
+  font-size: 22px;
+  font-weight: 500;
+  color: $darkenGrey-color;
+  margin-bottom: 45px;
+  text-align: center;
+  max-width: 580px;
 }
 .visitDescr {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #141718;
-    color: $background;
-    width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #141718;
+  color: $background;
+  width: 40%;
 }
 .sliderSlider {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin-bottom: 60px;
 }
-.sliderSlide *  {
-    text-align: center;
+.sliderSlide * {
+  text-align: center;
 }
 .slideTextWrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .descrTitle {
-    display: inline-block;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    font-size: $fontSize-huge;
-    text-align: center;
-    margin-bottom: 15px;
-    max-width: 400px;
+  display: inline-block;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: $fontSize-huge;
+  text-align: center;
+  margin-bottom: 15px;
+  max-width: 400px;
 }
 .descrSubtitle {
-    font-size: $fontSize-medium;
-    color: $darkGrey-color;
-    text-align: center;
-    max-width: 470px;
+  font-size: $fontSize-medium;
+  color: $darkenGrey-color;
+  text-align: center;
+  max-width: 470px;
 }
 .sliderButtons {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  button {
     background-color: $background;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // padding: 24px;
-    border-radius: $borderRadius-medium;
-    cursor: pointer;
-    button {
-        padding: 24px 32px;
+    padding: 24px 32px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      background-color: $ligthenGrey-color;
     }
+  }
 }
 .btnsSeparator {
-    width: 2px;
-    height: 30px;
-    background-color: $grey-color;
+  width: 2px;
+  height: 30px;
+  background-color: $grey-color;
 }

@@ -4,9 +4,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  font-size: 100px;
   height: 100vh;
-  color: $grey-color;
   .box {
     width: 50%;
     text-align: center;
@@ -18,12 +16,13 @@
     height: 100vh;
     width: 50%;
     justify-content: center;
-    background: $grey-color;
-    color: $color;
+    background: $ligthenGrey-color;
+    color: $black-color;
     font-size: 200px;
+    line-height: 1;
   }
-  .test {
+  .description {
     font-size: 30px;
-    margin-top: 25px;
+    margin: 25px 0px 10px 0px;
   }
 }

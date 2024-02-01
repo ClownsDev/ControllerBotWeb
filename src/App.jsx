@@ -4,16 +4,16 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import VisitPage from "./pages/Visit/VisitPage";
 function App() {
-  const [user, setUser] = useState(false);
+  const [user, setUser] = useState(true);
   return (
     <>
       {!user ? (
         <VisitPage setUser={setUser} />
       ) : (
         <>
-          <Header />
+          {/* <Header /> */}
           <Router />
-          <Footer />
+          {/* <Footer /> */}
         </>
       )}
     </>
