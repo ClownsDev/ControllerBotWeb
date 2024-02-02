@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Link } from "react-router-dom";
 
 function VisitPage({ setUser }) {
   const reg = () => {
@@ -27,9 +26,12 @@ function VisitPage({ setUser }) {
               Многофункциональный бот для Discord, предназначенный расширить
               возможности управления и модерирования сообществ.
             </h3>
-            <SimpleButton path="/servers" className={styles.btn} onClick={reg}>
-              Add to Discord
-            </SimpleButton>
+            <SimpleButton
+              path="/servers"
+              className={styles.btn}
+              onClick={reg}
+              children={"Add to Discord"}
+            />
           </div>
         </div>
       </div>

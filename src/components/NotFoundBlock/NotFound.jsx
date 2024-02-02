@@ -14,7 +14,7 @@ const NotFound = () => {
         <div className={styles.error}>
           <h1>404</h1>
           <span className={styles.description}>Страница не найдена 😕</span>
-          <SimpleButton children={"На главную"} />
+          <SimpleButton path="/" children={"На главную"} />
         </div>
       </div>
     </>

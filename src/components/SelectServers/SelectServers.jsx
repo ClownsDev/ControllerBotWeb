@@ -1,7 +1,7 @@
 import React from "react";
 
 import Header from "../Header/Header";
-import servers from "./Servers.module.scss";
+import servers from "./SelectServers.module.scss";
 import global from "../assets/styles/_global.module.scss";
 
 const Servers = () => {

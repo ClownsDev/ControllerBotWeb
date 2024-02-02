@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import VisitPage from "../../pages/Visit/VisitPage";
-import Servers from "../Servers/Servers";
+import Servers from "../SelectServers/SelectServers";
 import NotFoundPage from "../../pages/NotFound/NotFoundPage";
 
 const Router = () => {
