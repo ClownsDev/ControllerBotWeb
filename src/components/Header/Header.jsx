@@ -4,14 +4,17 @@ import { Link } from "react-router-dom";
 
 import headerStyle from "./HeaderBlock.module.scss";
 import globalStyle from "../assets/styles/_global.module.scss";
+import Logo from "../UI/Logo/Logo";
+import DropMenu from "../UI/DropMenu/DropMenu";
 
 const Header = () => {
   return (
-    <header className={headerStyle.root}>
+    <header className={headerStyle.header}>
       <div className={globalStyle.container}>
         <nav>
           <Link to="/">
-            <img src="./logo.svg" alt="waves" />
+            {/* <img className={globalStyle.logo} src="./logo.svg" alt="waves" /> */}
+            <Logo color="#fff" />
           </Link>
           <ul>
             <li>
@@ -23,7 +26,14 @@ const Header = () => {
             <li>
               <a href="#">Донаты</a>
             </li>
+            <li>
+              <a href="#">Справочник</a>
+            </li>
+            <li>
+              <a href="#">Донаты</a>
+            </li>
           </ul>
+          <DropMenu />
         </nav>
       </div>
     </header>
