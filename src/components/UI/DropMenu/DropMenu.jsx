@@ -1,20 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import styles from "./DropMenu.module.scss";
 
+const activeClass = `${styles.activeDropMenu}`;
+
 function DropMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
+  const [menuClasses, setMenuClasses] = useState(`${styles.dropMenu}`);
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
+    setMenuClasses(menuClasses + " " + activeClass);
   };
   const handleClose = () => {
     setAnchorEl(null);
+    setMenuClasses(`${styles.dropMenu}`);
   };
 
   return (
-    <div className={styles.dropMenu}>
+    <div className={menuClasses}>
       <div>
         <img src="./ServersPage/example.png" alt="avatar" />
       </div>
