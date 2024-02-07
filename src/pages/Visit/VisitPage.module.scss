@@ -1,16 +1,23 @@
-@import "../../components/assets/styles/variables.scss";
+@import "../../components/assets/styles/variables.module.scss";
+@import "../../components/assets/styles/_global.module.scss";
+
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
 .visitWrap {
   height: 100vh;
   overflow-y: hidden;
   display: flex;
   justify-content: space-between;
+  margin-left: -20px;
 }
 .visitRegistr {
   padding: 48px;
   height: 100%;
   width: 60%;
   background-color: $white-color;
+  background-image: url(/visitPage/Bold.svg);
+  background-size: 65vw;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .visitFormWrap {
   height: 100%;
@@ -36,7 +43,6 @@
   font-size: 22px;
   font-weight: 500;
   color: $darkenGrey-color;
-  margin-bottom: 45px;
   text-align: center;
   max-width: 580px;
 }
@@ -44,7 +50,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #141718;
+  background-color: $black-color;
   color: $background;
   width: 40%;
 }
@@ -84,18 +90,31 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  position: relative;
   button {
     background-color: $background;
     padding: 24px 32px;
-    border-radius: 20px;
     transition: 0.3s ease-in-out;
     &:hover {
-      background-color: $ligthenGrey-color;
+      opacity: 90%;
     }
   }
 }
-.btnsSeparator {
+
+.next {
+  border-radius: 0px 20px 20px 0px !important;
+}
+
+.prev {
+  border-radius: 20px 0px 0px 20px !important;
+}
+
+.sliderButtons::after {
+  content: "";
   width: 2px;
   height: 30px;
-  background-color: $grey-color;
+  border-radius: 50%;
+  background-color: $ligthenGrey-color;
+  position: absolute;
+  left: 92px;
 }
