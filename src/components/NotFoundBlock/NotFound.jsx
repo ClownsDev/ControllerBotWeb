@@ -9,7 +9,7 @@ const NotFound = () => {
     <>
       <div className={styles.root}>
         <div className={styles.box}>
-          <img src="../../../public/notFound/background.png" alt="" />
+          <img src="/notFound/background.png" alt="" />
         </div>
         <div className={styles.error}>
           <h1>404</h1>
