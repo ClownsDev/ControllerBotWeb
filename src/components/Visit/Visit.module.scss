@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
+
+@import "../../components/assets/styles/variables.module.scss";
+@import "../../components/assets/styles/_global.module.scss";
+
+.visitWrap {
+  height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -20px;
+}
+.visitRegistr {
+  padding: 48px;
+  height: 100%;
+  width: 60%;
+  background-color: $white-color;
+  background-image: url(/visitPage/Bold.svg);
+  background-size: 65vw;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.visitFormWrap {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.visitForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+.title {
+  font-weight: 600;
+  font-size: $fontSize-huge;
+  margin-bottom: 15px;
+  text-align: center;
+  color: $black-color;
+}
+.subtitle {
+  font-size: 22px;
+  font-weight: 500;
+  color: $darkenGrey-color;
+  text-align: center;
+  max-width: 580px;
+}
+.visitDescr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $black-color;
+  color: $background;
+  width: 40%;
+}

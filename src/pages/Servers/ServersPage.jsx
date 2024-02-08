@@ -1,6 +1,6 @@
 import React from "react";
 
-import Servers from "../../components/Servers/Servers";
+import Servers from "../../components/SelectServers/SelectServers";
 
 const ServersPage = () => {
   return <Servers />;
