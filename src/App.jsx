@@ -1,20 +1,19 @@
 import React, { useState } from "react";
 import Router from "./components/Router/Router";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
 import VisitPage from "./pages/Visit/VisitPage";
+import global from "./components/assets/styles/_global.module.scss";
+
 function App() {
   const [user, setUser] = useState(true);
+
   return (
     <>
       {!user ? (
         <VisitPage setUser={setUser} />
       ) : (
-        <>
-          {/* <Header /> */}
-          <Router />
-          {/* <Footer /> */}
-        </>
+        // <div className={global.containerSecond}>
+        <Router />
+        // </div>
       )}
     </>
   );
