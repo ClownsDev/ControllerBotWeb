@@ -1,9 +1,90 @@
 @import "./../assets/styles/variables.scss";
 
+// .page{
+//   margin: 0 auto;
+//   width: min(100%, 948px);
+//   padding: 0px, 40px;
+//   display: flex;
+//   align-items: center;
+//   z-index: 1;
+//   position: relative;
+// }
+
 .title {
   text-align: center;
   margin-top: 40px;
+  margin-bottom: 40px;
   font-size: $fontSize-extraLarge;
   font-weight: 500;
   color: $ligthenGrey-color;
+}
+.grid{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.case{
+  max-width: 260px;
+}
+.imageAndLogo{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  height: 152px;
+  min-width: 260px;
+  overflow: hidden;
+}
+.image{
+  position: absolute;
+  inset: 0px;
+  z-index: 1;
+  background: url(../257.gif) center center / cover no-repeat;
+  transform: scale(1.4);
+  filter: blur(10px);
+  opacity: 0.3;
+}
+.logo{
+  background: url(../257.gif);
+  position: relative;
+  z-index: 2;
+  border: 2px solid $white-color;
+  filter: drop-shadow($black-color 0px 32px 72px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.description{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 16px;
+  width: 100%;
+}
+.text{
+  margin-right: 12px;
+}
+.serverName{
+  font-weight: bold;
+  font-size: $fontSize-small;
+  line-height: 24px;
+  color: $white-color;
+  margin: 0px 0px 3px;
+}
+.buttonSetup{
+  width: 90px;
+  height: 48px;
+  background: $grey-color;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-align: center;
+  color: $white-color;
+  transition: 0.2s;
+  &:hover{
+    background: $ligthenGrey-color
+  }
 }
