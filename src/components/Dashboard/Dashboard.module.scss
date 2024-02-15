@@ -11,6 +11,7 @@ aside {
   width: 17%;
   margin: 20px 0px;
   color: $white-color;
+
   .profileBox {
     display: flex;
     align-items: center;
@@ -47,6 +48,10 @@ aside {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        transition: 0.3s ease-in-out;
+        &[class$="active"] {
+          background-color: lighten($black-color, 40%);
+        }
         img {
           max-width: 56px;
           margin-left: 15px;

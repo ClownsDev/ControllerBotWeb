@@ -1,7 +1,7 @@
 import React from "react";
 
+import { NavLink } from "react-router-dom";
 import dashboardStyles from "./Dashboard.module.scss";
-import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   return (
@@ -14,29 +14,29 @@ const Dashboard = () => {
         <div className={dashboardStyles.category}>
           <ul className={dashboardStyles.categoryLink}>
             <li>
-              <Link to="/dashboard/general">
+              <NavLink to="/dashboard/general">
                 General <img src="/Dashboard/leaderboard.svg" alt="General" />
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link>
+              <NavLink to="/dashboard/leaderboard">
                 Leaderboard <img src="/Dashboard/award.svg" alt="Awards" />
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link>
+              <NavLink to="/dashboard/personalizer">
                 Bot Personalizer <img src="/Dashboard/bot.svg" alt="Bot" />{" "}
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link>
+              <NavLink to="/dashboard/settings">
                 Settings <img src="/Dashboard/settings.svg" alt="Settings" />
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link>
+              <NavLink to="/dashboard/moderator">
                 Moderator <img src="/Dashboard/shield.svg" alt="Moderator" />
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
