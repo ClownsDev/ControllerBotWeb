@@ -1,0 +1,17 @@
+@import "../../assets/styles/variables.module";
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.options {
+  width: 82%;
+  background-color: lighten($black-color, 3%);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px 0px 20px 19px;
+}

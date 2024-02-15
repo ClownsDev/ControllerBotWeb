@@ -1,11 +1,10 @@
-@import "./../assets/styles/variables.scss";
+@import "./../assets/styles/variables.module.scss";
 
 .root {
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     height: 70px;
     width: 100%;
     font-size: $fontSize-tiny;
@@ -29,7 +28,9 @@
     }
   }
 }
-
 header {
   background-color: #0f0f12;
+  max-width: 1900px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
