@@ -2,26 +2,31 @@
 
 .dropMenu {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
   align-items: center;
 
   width: 100%;
-  max-width: 180px;
+  max-width: 80px;
   background-color: $white-color;
   padding: 8px;
   border-radius: $borderRadius-large;
   transition: 0.2s all;
 }
-.activeDropMenu {
-  border-radius: $borderRadius-large $borderRadius-large 0 0;
+.image {
+  max-width: 30px;
 }
 .name {
   font-weight: 500;
   font-size: $fontSize-small;
   color: $black-color;
   text-transform: none;
+  opacity: 0;
+  width: 0;
 }
 .menu {
+  * {
+    transition: 0.1s all ease-in-out;
+  }
   > div:nth-child(3) {
     width: 100%;
     max-width: 180px;
@@ -45,4 +50,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.activeDropMenu {
+  border-radius: $borderRadius-large $borderRadius-large 0 0;
+  max-width: 180px;
+  justify-content: space-between;
+  padding: 8px 18px;
+  .name {
+    opacity: 1;
+    width: 40px;
+  }
 }

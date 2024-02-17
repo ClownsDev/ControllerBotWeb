@@ -21,12 +21,14 @@ function DropMenu() {
 
   return (
     <div className={menuClasses}>
-      <div>
+      <div className={styles.image}>
         <img src="./ServersPage/example.png" alt="avatar" />
       </div>
-      <h4 className={styles.name}>Alesia K.</h4>
+      <h4 className={styles.name}>
+        {menuClasses.includes(activeClass) ? "Name" : false}
+      </h4>
       <button className={styles.btn} onClick={handleClick}>
-        <img src="./ServersPage/arrow.svg" alt="" srcset="" />
+        <img src="./ServersPage/arrow.svg" alt="" />
       </button>
 
       <Menu
