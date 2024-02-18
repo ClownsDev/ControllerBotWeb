@@ -1,29 +1,37 @@
 @import "./../assets/styles/variables.module.scss";
 
-.root {
+.header {
+  background-color: #0f0f12;
+  height: 90px;
+  svg {
+    max-width: 60px;
+    max-height: 60px;
+  }
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+
+    padding: 15px 0px;
     width: 100%;
-    font-size: $fontSize-tiny;
     font-weight: 500;
     text-transform: uppercase;
     ul {
       display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      margin-right: 25px;
     }
     li a {
-      color: #b4b4b4;
+      color: $grey-color;
     }
     li + li {
       margin-left: 25px;
-      color: red;
     }
     a {
-      transition: 0.3s ease-in;
+      transition: 0.2s ease-in;
       &:hover {
-        color: #fff;
+        color: #b4b4b4;
       }
     }
   }

@@ -3,28 +3,37 @@ import { Link } from "react-router-dom";
 
 import headerStyle from "./HeaderBlock.module.scss";
 import globalStyle from "../assets/styles/_global.module.scss";
+import Logo from "../UI/Logo/Logo";
+import DropMenu from "../UI/DropMenu/DropMenu";
 
 const Header = () => {
   return (
-    <header className={headerStyle.root}>
-      {/* <div className={globalStyle.containerSecond}> */}
-      <nav>
-        <Link to="/">
-          <img src="/logo.svg" alt="waves" />
-        </Link>
-        <ul>
-          <li>
-            <Link to="#">Сообщество</Link>
-          </li>
-          <li>
-            <Link to="#">Справочник</Link>
-          </li>
-          <li>
-            <Link to="#">Донаты</Link>
-          </li>
-        </ul>
-      </nav>
-      {/* </div> */}
+    <header className={headerStyle.header}>
+      <div className={globalStyle.container}>
+        <nav>
+          <Link to="/">
+            <Logo color="#fff" />
+          </Link>
+          <ul>
+            <li>
+              <a href="#">Сообщество</a>
+            </li>
+            <li>
+              <a href="#">Справочник</a>
+            </li>
+            <li>
+              <a href="#">Донаты</a>
+            </li>
+            <li>
+              <a href="#">Справочник</a>
+            </li>
+            <li>
+              <a href="#">Донаты</a>
+            </li>
+          </ul>
+          <DropMenu />
+        </nav>
+      </div>
     </header>
   );
 };
