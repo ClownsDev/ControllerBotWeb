@@ -6,7 +6,6 @@ import Header from "../../components/Header/Header";
 const ServersPage = () => {
   return (
     <>
-      <Header />
       <Servers />
     </>
   );
