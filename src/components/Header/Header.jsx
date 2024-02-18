@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 
 import headerStyle from "./HeaderBlock.module.scss";
@@ -13,7 +12,6 @@ const Header = () => {
       <div className={globalStyle.container}>
         <nav>
           <Link to="/">
-            {/* <img className={globalStyle.logo} src="./logo.svg" alt="waves" /> */}
             <Logo color="#fff" />
           </Link>
           <ul>
