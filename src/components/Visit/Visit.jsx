@@ -4,9 +4,9 @@ import SimpleButton from "../../components/UI/SimpleButton/SimpleButton";
 import SwiperBlock from "../../components/UI/Swiper/SwiperBlock";
 import styles from "./Visit.module.scss";
 
-function Visit({ setUser }) {
+function Visit({}) {
   const reg = () => {
-    setUser(true);
+    console.log("Click");
   };
   return (
     <div className={styles.visitWrap}>
